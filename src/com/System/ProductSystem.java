@@ -1,4 +1,4 @@
-package com.product;
+package com.System;
 
 import com.utils.JdbcUtils;
 
@@ -15,7 +15,7 @@ public class ProductSystem {
         try {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
-            String sql = "insert into product(`name`,`price`) values (?,?)";//使用？占位符代替参数
+            String sql = "insert into System(`name`,`price`) values (?,?)";//使用？占位符代替参数
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             preparedStatement.setString(1,name);
             preparedStatement.setDouble(2, price);
@@ -38,7 +38,7 @@ public class ProductSystem {
         try {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
-            String sql = "delete from product where `p_id` = ?";
+            String sql = "delete from System where `p_id` = ?";
             String sql1 = "select * from o_order where `information` = ?;";
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             preparedStatement1 = connection.prepareStatement(sql1);//预编译，不执行
@@ -69,7 +69,7 @@ public class ProductSystem {
         try {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
-            String sql = "update `product` set `name`=?,`price`=? where `p_id`=?";//使用？占位符代替参数
+            String sql = "update `System` set `name`=?,`price`=? where `p_id`=?";//使用？占位符代替参数
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             preparedStatement.setString(1,name);
             preparedStatement.setDouble(2,price);
@@ -94,7 +94,7 @@ public class ProductSystem {
         try {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
-            String sql = "select * from product";//使用？占位符代替参数
+            String sql = "select * from System";//使用？占位符代替参数
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             resultSet =  preparedStatement.executeQuery();//执行
             connection.commit();//关闭事务
@@ -116,7 +116,7 @@ public class ProductSystem {
         try {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
-            String sql = "select * from product order by price ASC";//使用？占位符代替参数
+            String sql = "select * from System order by price ASC";//使用？占位符代替参数
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             resultSet =  preparedStatement.executeQuery();//执行
             connection.commit();//关闭事务
@@ -138,7 +138,7 @@ public class ProductSystem {
         try {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
-            String sql = "select * from product order by price DESC";//使用？占位符代替参数
+            String sql = "select * from System order by price DESC";//使用？占位符代替参数
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             resultSet =  preparedStatement.executeQuery();//执行
             connection.commit();//关闭事务
@@ -161,7 +161,7 @@ public class ProductSystem {
         try {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
-            String sql = "select * from product where `name` = ?";//使用？占位符代替参数
+            String sql = "select * from System where `name` = ?";//使用？占位符代替参数
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             preparedStatement.setString(1,name);
             resultSet =  preparedStatement.executeQuery();//执行

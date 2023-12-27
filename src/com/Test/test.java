@@ -1,12 +1,9 @@
 package com.Test;
 
-import com.product.OrderSystem;
-import com.product.ProductSystem;
+import com.System.OrderSystem;
+import com.System.ProductSystem;
 
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class test {
     public static void main(String[] args) throws ParseException {
