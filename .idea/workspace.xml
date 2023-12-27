@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb91a17-8454-48a7-9187-065337f62d94" name="Changes" comment="finish" />
+    <list default="true" id="8bb91a17-8454-48a7-9187-065337f62d94" name="Changes" comment="finish">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/System/OrderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/System/OrderSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/System/ProductSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/System/ProductSystem.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="23581ea2-ae24-4d08-92c5-7bebf31c685e" />
+        <option name="url" value="https://github.com/baieleven/JDBC.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

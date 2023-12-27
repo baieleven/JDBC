@@ -209,7 +209,7 @@ public class OrderSystem {
         }
     }
 
-    public static void queryByDay(Date ordertime){//对商品表的删除操作
+    public static void queryByDay(Date ordertime){//按时间查询
         Connection connection = null;
         PreparedStatement preparedStatement = null;//使用PrepareStatement对象解决sql注入问题:把传递进来的参数当作字符
         ResultSet resultSet = null;

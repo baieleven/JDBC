@@ -87,7 +87,7 @@ public class ProductSystem {
         }
     }
 
-    public static void queryAll(){//对商品表的删除操作
+    public static void queryAll(){//对商品表的查询操作
         Connection connection = null;
         PreparedStatement preparedStatement = null;//使用PrepareStatement对象解决sql注入问题:把传递进来的参数当作字符
         ResultSet resultSet = null;
@@ -153,7 +153,7 @@ public class ProductSystem {
         }
     }
 
-    public static void queryByName(String name){//对商品表的删除操作
+    public static void queryByName(String name){//按名字查询
         Connection connection = null;
         PreparedStatement preparedStatement = null;//使用PrepareStatement对象解决sql注入问题:把传递进来的参数当作字符
         ResultSet resultSet = null;
