@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb91a17-8454-48a7-9187-065337f62d94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/product/OrderSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Test/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/TestInsert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/product/ProductSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/product/ProductSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/utils/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/JdbcUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="8bb91a17-8454-48a7-9187-065337f62d94" name="Changes" comment="finish" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +57,14 @@
       <option name="presentableId" value="Default" />
       <updated>1702753679653</updated>
     </task>
+    <task id="LOCAL-00001" summary="finish">
+      <created>1703681371275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703681371275</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +77,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
