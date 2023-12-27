@@ -10,7 +10,7 @@ C:.
 ├─utils//内含JdbcUtils工具类，方便连接数据库与资源释放
 └─db.properties//资源配置文件
 }
-ProdectSystem:insert(String name,double price)实现对商品表的增加操作
+ProductSystem:insert(String name,double price)实现对商品表的增加操作
 drop(int p_id)对商品表的删除操作(已经在订单表中有的商品不会被删除)
 update(int p_id,String name,double price)对商品表的更新操作
 queryAll(){//对商品表的查询操作，显示商品表
