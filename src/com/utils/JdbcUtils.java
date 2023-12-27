@@ -54,4 +54,35 @@ public class JdbcUtils {
             }
         }
     }
+
+    public static void release(Connection c, Statement s1, Statement s2 ,ResultSet r){
+        if(r != null){
+            try {
+                r.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if(s1 != null){
+            try {
+                s1.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if(s2 != null){
+            try {
+                s2.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if(c != null){
+            try {
+                c.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 }
