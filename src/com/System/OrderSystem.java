@@ -14,7 +14,7 @@ public class OrderSystem {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
             String sql = "insert into o_order(`information`,`orderprice`,`ordertime`) values (?,?,?)";
-            String sql1 = "select * from System where `p_id` = ?;";
+            String sql1 = "select * from product where `p_id` = ?;";
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             preparedStatement1 = connection.prepareStatement(sql1);//预编译，不执行
             preparedStatement.setInt(1,information);
@@ -73,7 +73,7 @@ public class OrderSystem {
             connection = JdbcUtils.getConnection();//获取数据库链接
             connection.setAutoCommit(false);//开启事务
             String sql = "update `o_order` set `information`=?,`orderprice`=?,`ordertime`=? where o_id=?";
-            String sql1 = "select * from System where `p_id` = ?;";
+            String sql1 = "select * from product where `p_id` = ?;";
             preparedStatement = connection.prepareStatement(sql);//预编译，不执行
             preparedStatement1 = connection.prepareStatement(sql1);//预编译，不执行
             preparedStatement.setInt(1,information);
